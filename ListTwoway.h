@@ -22,6 +22,8 @@ class ListTwoway {
         void clear();
 
         int getSize();
+        Item<Type>* getHead();
+        Item<Type>* getTail();
 };
 
 
@@ -29,6 +31,17 @@ template<typename Type>
 int ListTwoway<Type>::getSize()
 {
     return size;
+}
+
+template<typename Type>
+Item<Type>* ListTwoway<Type>::getHead()
+{
+    return head;
+}
+template<typename Type>
+Item<Type>* ListTwoway<Type>::getTail()
+{
+    return tail;
 }
 
 template<typename Type>
