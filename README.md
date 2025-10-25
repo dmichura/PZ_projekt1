@@ -38,6 +38,12 @@ Celem projektu jest stworzenie dwukierunkowej listy, której elementy będą prz
          - `data` – dane do zapisania w nowym **Item**.
        - **Działanie:** Jeśli indeks jest 0, dodawany jest element na początek listy. Jeśli indeks jest równy liczbie elementów, dodawany jest element na koniec. W przeciwnym przypadku element jest wstawiany w odpowiednie miejsce w liście.
 
+     - **`removeAt(index)`**  
+       - Usuwa element pod wskazanym indeksem. Jeśli indeks jest poza zakresem, nic się nie dzieje.
+       - **Argumenty:**
+         - `index` – indeks **Item**u, który ma zostać usunięty.
+       - **Działanie:** Usuwa **Item** o podanym indeksie i odpowiednio aktualizuje wskaźniki sąsiednich elementów.
+
      - **`shift()`**  
        - Usuwa element z początku listy. Przesuwa wskaźnik `head` na następny **Item**.
        - **Argumenty:** Brak.
@@ -47,36 +53,6 @@ Celem projektu jest stworzenie dwukierunkowej listy, której elementy będą prz
        - Usuwa element z końca listy. Przesuwa wskaźnik `tail` na poprzedni **Item**.
        - **Argumenty:** Brak.
        - **Działanie:** Jeśli lista ma tylko jeden **Item**, zarówno `head`, jak i `tail` zostaną ustawione na `nullptr`. W przeciwnym przypadku wskaźnik `tail` jest zmieniany na poprzedni **Item**.
-
-     - **`removeAt(index)`**  
-       - Usuwa element pod wskazanym indeksem. Jeśli indeks jest poza zakresem, nic się nie dzieje.
-       - **Argumenty:**
-         - `index` – indeks **Item**u, który ma zostać usunięty.
-       - **Działanie:** Usuwa **Item** o podanym indeksie i odpowiednio aktualizuje wskaźniki sąsiednich elementów.
-
-     - **`toArray()`**  
-       - Zwraca wszystkie **Item**y listy od `head` do `tail` w postaci tablicy.
-       - **Argumenty:** Brak.
-       - **Zwraca:** Tablicę z danymi wszystkich **Item**ów listy.
-       - **Działanie:** Przechodzi przez listę, zaczynając od `head`, i dodaje dane każdego **Item**u do tablicy.
-
-     - **`reverseToArray()`**  
-       - Zwraca wszystkie **Item**y listy od `tail` do `head` w postaci tablicy.
-       - **Argumenty:** Brak.
-       - **Zwraca:** Tablicę z danymi wszystkich **Item**ów listy w odwrotnej kolejności.
-       - **Działanie:** Przechodzi przez listę w odwrotnej kolejności, zaczynając od `tail`, i dodaje dane każdego **Item**u do tablicy.
-
-     - **`next()`**  
-       - Zwraca następny **Item** w iteracji po liście.
-       - **Argumenty:** Brak.
-       - **Zwraca:** Dane następnego **Item**u listy.
-       - **Działanie:** Zwraca dane następnego **Item**u w liście i przesuwa wskaźnik na następny **Item**.
-
-     - **`prev()`**  
-       - Zwraca poprzedni **Item** w iteracji po liście.
-       - **Argumenty:** Brak.
-       - **Zwraca:** Dane poprzedniego **Item**u listy.
-       - **Działanie:** Zwraca dane poprzedniego **Item**u w liście i przesuwa wskaźnik na poprzedni **Item**.
 
      - **`clear()`**  
        - Usuwa wszystkie **Item**y listy, ustawiając wskaźniki `head` i `tail` na `nullptr`.
@@ -107,17 +83,16 @@ Celem projektu jest stworzenie dwukierunkowej listy, której elementy będą prz
     - [ ✅ ] Zaimplementuj konstruktor oraz destruktor.
 3. **ListTwoway**:
     - [ ✅ ] Stwórz klasę `ListTwoway` z odpowiednimi właściwościami: `head`, `tail`.
-    - [ ] Stwórz **`unshift(data)`**.
-    - [ ] Stwórz **`push(data)`**.
-    - [ ] Stwórz **`insertAt(index, data)`**.
-    - [ ] Stwórz **`shift()`**.
-    - [ ] Stwórz **`pop()`**.
-    - [ ] Stwórz **`removeAt(index)`**.
-    - [ ] Stwórz **`clear()`**.
+    - [ ✅ ] Stwórz **`unshift(data)`**.
+    - [ ✅ ] Stwórz **`push(data)`**.
+    - [ ✅ ] Stwórz **`insertAt(index, data)`**.
+    - [ ✅ ] Stwórz **`shift()`**.
+    - [ ✅ ] Stwórz **`pop()`**.
+    - [ ✅ ] Stwórz **`removeAt(index)`**.
+    - [ ✅ ] Stwórz **`clear()`**.
 
 4. **Iterator**:
-    - [ ] Zaimplementuj klasę `Iterator`, która będzie umożliwiać iterację po elementach listy.
-    - [ ] Dodaj metody do przechodzenia do następnego i poprzedniego elementu oraz sprawdzania, czy są elementy do przeglądania.
+    - [ ✅ ] Zaimplementuj klasę `Iterator`, która będzie umożliwiać iterację po elementach listy.
 
 5. **Factory**:
     - [ ] Stwórz klasę `Factory`, która będzie odpowiedzialna za tworzenie instancji listy.
