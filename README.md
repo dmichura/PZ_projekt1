@@ -106,17 +106,13 @@ Celem projektu jest stworzenie dwukierunkowej listy, której elementy będą prz
     - [ ✅ ] Stwórz klasę `Item` z odpowiednimi właściwościami: `data`, `next`, `prev`.
     - [ ✅ ] Zaimplementuj konstruktor oraz destruktor.
 3. **ListTwoway**:
-    - [ ] Stwórz klasę `ListTwoway` z odpowiednimi właściwościami: `head`, `tail`.
+    - [ ✅ ] Stwórz klasę `ListTwoway` z odpowiednimi właściwościami: `head`, `tail`.
     - [ ] Stwórz **`unshift(data)`**.
     - [ ] Stwórz **`push(data)`**.
     - [ ] Stwórz **`insertAt(index, data)`**.
     - [ ] Stwórz **`shift()`**.
     - [ ] Stwórz **`pop()`**.
     - [ ] Stwórz **`removeAt(index)`**.
-    - [ ] Stwórz **`toArray()`**.
-    - [ ] Stwórz **`reverseToArray()`**.
-    - [ ] Stwórz **`next()`**.
-    - [ ] Stwórz **`prev()`**.
     - [ ] Stwórz **`clear()`**.
 
 4. **Iterator**:
