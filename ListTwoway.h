@@ -111,8 +111,122 @@ void ListTwoway<Type>::insertAt(int index, Type data)
     }
 
     Item<Type>* newItem = new Item<Type>(data);
+    Item<Type>* current = head;
 
-    cout << "New item" << newItem->data;
+    for (int i = 0; i < index - 1; ++i) {
+        current = current->next;
+
+    }
+
+    newItem->next = current->next;
+    if (current->next) {
+        current->next->prev = newItem;
+    }
+
+    current->next = newItem;
+    newItem->prev = current;
+
+    size++;
 }
+
+template<typename Type>
+void ListTwoway<Type>::removeAt(int index)
+{
+    if (index < 0 || index >= size) {
+        cout << "Nieprawidłowy indeks!" << endl;
+        return;
+    }
+
+
+    if (index == 0) {
+        shift();
+        return;
+    }
+
+
+    if (index == size - 1) {
+        pop();
+        return;
+    }
+
+
+    Item<Type>* current = head;
+    for (int i = 0; i < index; ++i) {
+        current = current->next;
+    }
+
+    current->prev->next = current->next;
+    if (current->next) {
+        current->next->prev = current->prev;
+    }
+
+    delete current;
+
+    size--;
+}
+
+template<typename Type>
+void ListTwoway<Type>::shift()
+{
+
+    if (!head) {
+        cout << "Lista jest pusta!" << endl;
+        return;
+    }
+
+
+    if (head == tail) {
+        delete head;
+        head = tail = nullptr;
+    }
+    else {
+        Item<Type>* temp = head;
+        head = head->next;
+        head->prev = nullptr;
+        delete temp;
+    }
+
+
+    size--;
+}
+
+template<typename Type>
+void ListTwoway<Type>::pop()
+{
+    if (!tail) {
+        cout << "Lista jest pusta!" << endl;
+        return;
+    }
+
+
+    if (head == tail) {
+        delete tail;
+        head = tail = nullptr;
+    }
+    else {
+        Item<Type>* temp = tail;
+        tail = tail->prev;
+        tail->next = nullptr;
+        delete temp;
+    }
+
+
+    size--;
+}
+
+template<typename Type>
+void ListTwoway<Type>::clear()
+{
+    Item<Type>* current = head;
+    while (current != nullptr) {
+        Item<Type>* temp = current;
+        current = current->next;
+        delete temp;
+    }
+    head = tail = nullptr;
+    size = 0;
+}
+
+
 
 #endif
