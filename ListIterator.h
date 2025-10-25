@@ -13,6 +13,8 @@ class ListIterator {
         bool hasNext() const;
         Type next();
         void reset();
+        void printAll() const;
+        void printAllReverse() const;
 };
 
 template<typename Type>
@@ -43,7 +45,29 @@ template<typename Type>
 void ListIterator<Type>::reset()
 {
     current = list->getHead();
-    // cout << current;
+}
+
+template<typename Type>
+void ListIterator<Type>::printAll() const {
+    Item<Type>* currentItem = list->getHead();
+    cout << "{ ";
+    while (currentItem) {
+        cout << currentItem->data << " ";
+        currentItem = currentItem->next;
+    }
+    cout << "}" << endl;
+}
+
+template<typename Type>
+void ListIterator<Type>::printAllReverse() const {
+    Item<Type>* current = list->getTail();
+    
+    cout << "{ ";
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->prev;
+    }
+    cout << "}" << endl;
 }
 
 #endif
