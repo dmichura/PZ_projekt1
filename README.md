@@ -74,19 +74,15 @@ Celem projektu jest stworzenie dwukierunkowej listy, której elementy będą prz
         - Wyświetla wszystkie elementy listy w kolejności od początku do końca
      - **`printAllReverse()`**  
         - Wyświetla wszystkie elementy listy w odwrotnej kolejności (od końca do początku)
-
-### Struktura projektu
-
-- main.cpp ( Funkcja main i testowanie funkcji )
-
-- Item.h ( Definicja klasy Item )
-
-- ListTwoway.h ( Definicja klasy ListTwoway )
-
+1. **Logger** - Singleton do loggowania wiadomości
+  - **Metody:**
+       - **`log(string msg)`**  
+        - Wyświetla wiadomość msg
 ### Wzorce projektowe
 
 - **Factory**: Wzorzec factory powinien umożliwiać tworzenie instancji listy. Dzięki temu użytkownik nie musi martwić się o szczegóły tworzenia obiektów
 - **Iterator**: Iteratory pozwalają na łatwą nawigację po liście w obu kierunkach. Implementacja iteratora umożliwi łatwe przeglądanie elementów listy
+- **Singleton**: Zapewnia, że dany obiekt klasy ma tylko jedną instancję w systemie i jest dostępny globalnie. Używany tam, gdzie potrzebny jest jeden, wspólny punkt dostępu, np. w przypadku loggera czy zarządcy konfiguracji. Dostęp do instancji uzyskiwany jest przez statyczną metodę, która tworzy obiekt tylko raz
 
 ## Lista zadań (TODO)
 
