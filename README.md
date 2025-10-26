@@ -87,23 +87,23 @@ Celem projektu jest stworzenie dwukierunkowej listy, której elementy będą prz
 ## Lista zadań (TODO)
 
 1. **main.cpp**:
-    - [ ✅ ] Zaimplementuj funkcję `main()`, która testuje wszystkie metody listy oraz iteratora.
+    - [ OK ] Zaimplementuj funkcję `main()`, która testuje wszystkie metody listy oraz iteratora.
     - [ ] Przetestuj wszystkie funkcjonalności listy (dodawanie, usuwanie, iteracja, wyświetlanie).
 2. **Item**:
-    - [ ✅ ] Stwórz klasę `Item` z odpowiednimi właściwościami: `data`, `next`, `prev`.
-    - [ ✅ ] Zaimplementuj konstruktor oraz destruktor.
+    - [ OK ] Stwórz klasę `Item` z odpowiednimi właściwościami: `data`, `next`, `prev`.
+    - [ OK ] Zaimplementuj konstruktor oraz destruktor.
 3. **ListTwoway**:
-    - [ ✅ ] Stwórz klasę `ListTwoway` z odpowiednimi właściwościami: `head`, `tail`.
-    - [ ✅ ] Stwórz **`unshift(data)`**.
-    - [ ✅ ] Stwórz **`push(data)`**.
-    - [ ✅ ] Stwórz **`insertAt(index, data)`**.
-    - [ ✅ ] Stwórz **`shift()`**.
-    - [ ✅ ] Stwórz **`pop()`**.
-    - [ ✅ ] Stwórz **`removeAt(index)`**.
-    - [ ✅ ] Stwórz **`clear()`**.
+    - [ OK ] Stwórz klasę `ListTwoway` z odpowiednimi właściwościami: `head`, `tail`.
+    - [ OK ] Stwórz **`unshift(data)`**.
+    - [ OK ] Stwórz **`push(data)`**.
+    - [ OK ] Stwórz **`insertAt(index, data)`**.
+    - [ OK ] Stwórz **`shift()`**.
+    - [ OK ] Stwórz **`pop()`**.
+    - [ OK ] Stwórz **`removeAt(index)`**.
+    - [ OK ] Stwórz **`clear()`**.
 
 4. **Iterator**:
-    - [ ✅ ] Zaimplementuj klasę `Iterator`, która będzie umożliwiać iterację po elementach listy.
+    - [ OK ] Zaimplementuj klasę `Iterator`, która będzie umożliwiać iterację po elementach listy.
 
 5. **Factory**:
-    - [ ✅ ] Stwórz klasę `Factory`, która będzie odpowiedzialna za tworzenie instancji listy.
+    - [ OK ] Stwórz klasę `Factory`, która będzie odpowiedzialna za tworzenie instancji listy.
