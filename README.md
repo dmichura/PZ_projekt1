@@ -59,6 +59,21 @@ Celem projektu jest stworzenie dwukierunkowej listy, której elementy będą prz
        - **Argumenty:** Brak.
        - **Działanie:** Usuwa wszystkie **Item**y listy i resetuje wskaźniki `head` i `tail` na `nullptr`, co skutkuje opróżnieniem listy.
 
+1. **ListIterator** - Iterator dla ListTwoway
+   - **Właściwości:**
+        - **`current`**: Wskaźnik do bieżącego elementu w iteracji
+        - **`list`**: Wskaźnik do listy, którą iterator przetwarza
+   - **Metody:**
+     - **`hasNext()`**  
+        - Zwraca `true`, jeśli istnieje kolejny element w iteracji
+     - **`next()`**  
+        - Zwraca dane kolejnego elementu w liście i przesuwa iterator do tego elementu
+     - **`clear()`**  
+        - Ustawia iterator na początek listy
+     - **`printAll()`**  
+        - Wyświetla wszystkie elementy listy w kolejności od początku do końca
+     - **`printAllReverse()`**  
+        - Wyświetla wszystkie elementy listy w odwrotnej kolejności (od końca do początku)
 
 ### Struktura projektu
 
@@ -95,4 +110,4 @@ Celem projektu jest stworzenie dwukierunkowej listy, której elementy będą prz
     - [ ✅ ] Zaimplementuj klasę `Iterator`, która będzie umożliwiać iterację po elementach listy.
 
 5. **Factory**:
-    - [ ] Stwórz klasę `Factory`, która będzie odpowiedzialna za tworzenie instancji listy.
+    - [ ✅ ] Stwórz klasę `Factory`, która będzie odpowiedzialna za tworzenie instancji listy.
